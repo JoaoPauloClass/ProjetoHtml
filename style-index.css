@@ -3,6 +3,7 @@
     Vermelho #ff4545
 */
 
+/**/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 
 *{
@@ -95,6 +96,7 @@ header{
     border-radius: 10px;
 }
 
+/*animacao do botao cadastro ao colocar o mouse por cima*/
 #header-btn-cadastro:hover{
     cursor: pointer;
     transition: all 200ms;
@@ -103,7 +105,23 @@ header{
     padding: 15px;
 }
 
-/*resposividade do menu*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ff0000;
+    color: white;
+}
+
+footer p{
+    font-size: 2.5vh;
+}
+
+/*resposividade para telas menores que 1250px*/
 @media (max-width: 1250px){
 
 .logo img{
@@ -114,8 +132,12 @@ header{
     font-size: 2vh;
 }
 
+footer p{
+    font-size: 2.5vh;
 }
 
+}
+/*resposividade para mobile, menores que 850px*/
 @media (max-width: 850px){
 
 header{
