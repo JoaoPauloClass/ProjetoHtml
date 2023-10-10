@@ -175,6 +175,10 @@ header{
     align-items: center;
 }
 
+footer p{
+    font-size: 2vh;
+}
+
 }
 
 main h1 {

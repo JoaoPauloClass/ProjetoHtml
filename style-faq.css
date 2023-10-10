@@ -269,4 +269,8 @@ main h2{
 main button{
     width: 50vw;
 }
+
+footer p{
+    font-size: 2vh;
+}
 }
