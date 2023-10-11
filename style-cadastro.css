@@ -198,10 +198,10 @@ section p{
 }
 
 form{
-    margin: 0px 0px 20px 200px;
+    display: block;
+    margin: auto;
     padding: 0px 20px;
-    width: 100%;
-    display: inline-block;
+    width: 50%;
 }
 
 form label{
@@ -211,7 +211,7 @@ form label{
 }
 
 form input{
-    margin: 15px -200px;
+    margin: 15px 0px;
     height: 35px;
     width: 50%;
     border: 1px solid rgb(182, 182, 182);
