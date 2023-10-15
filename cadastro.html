@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar usuário</title>
+    <link rel="stylesheet" href="style-cadastro.css">
+    <script src="navbar.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imgs/logo-automarket.png" alt="Logo AutoMarket">
+            <h1>AutoMarket</h1>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+        <nav class="nav-header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Vendedores</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="cadastro.html" id="header-btn-cadastro">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            
+            <h1>Cadastro de Usuário</h1>
+            <br> 
+            <p>Você está a poucos passos de fazer parte da AutoMarket!</p>
+            
+<br>
+
+            <form id="cadastro-form">
+    
+                <label for="nome"><b>Nome:</b></label>
+                <input type="text" id="nome"><br>
+    
+                <label for="email"><b>E-mail:</b></label>
+                <input type="email" id="email"><br>
+    
+                <label for="senha"><b>Senha: </b></label>
+                <input type="password" id="nome"><br>
+    
+                <label for="senha-conf"><b>Confirmar Senha:</b></label>
+                <input type="password" id="senha-conf"><br>
+    
+                <label for="estado"><b>Estado / Cidade:</b></label>
+                <input type="text" id="estado"><br>
+
+                <label for="telefone"><b>Telefone Celular:</b></label>
+                <input type="number" id="telefone"><br>
+    
+            </form>
+    
+            <button type="reset" id="btn-reset" form="cadastro-form">Limpar</button>
+    
+            <button type="submit" id="btn-submit" form="cadastro-form">Cadastrar</button>
+    
+        </section>
+    </main>
+    <br><br>
+    <footer>
+        <p><b>&copy; 1995 - 2023 AutoMarket S.A. Todos os direitos reservados.</b></p>
+    </footer>
+</body>
+</html>

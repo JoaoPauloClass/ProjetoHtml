@@ -175,6 +175,20 @@ header{
     align-items: center;
 }
 
+.contato-info{
+    flex-direction: column;
+    gap: 5vh;
+}
+
+footer p{
+    font-size: 2vh;
+}
+
+}
+
+/*css do contato*/
+main{
+    min-height: 88vh;
 }
 
 main h1 {
@@ -182,7 +196,7 @@ main h1 {
     text-align: center;
     color: rgb(255, 255, 255), 255;
     background: #ff4545;
-    padding: 120px;
+    padding: 3em;
     border-top: 5px solid white;
 }
 
@@ -210,15 +224,6 @@ main h1 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    background-color: #ff4545;
-    padding: 10px 0;
-    color: white;
-    position: fixed;
-    bottom: 0;
 }
 
 img {

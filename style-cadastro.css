@@ -1,8 +1,4 @@
-/*
-    Vermelho #ff4545
-*/
-
-/**/
+/* Vermelho #ff4545 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 
 *{
@@ -95,7 +91,7 @@ header{
     border-radius: 10px;
 }
 
-/*animacao do botao cadastro ao colocar o mouse por cima*/
+/* animacao do botao cadastro ao colocar o mouse por cima */
 #header-btn-cadastro:hover{
     cursor: pointer;
     transition: all 200ms;
@@ -120,7 +116,7 @@ footer p{
     font-size: 2.5vh;
 }
 
-/*resposividade para telas menores que 1250px*/
+/* resposividade para telas menores que 1250px */
 @media (max-width: 1250px){
 
 .logo img{
@@ -136,7 +132,8 @@ footer p{
 }
 
 }
-/*resposividade para mobile, menores que 850px*/
+
+/* resposividade para mobile, menores que 850px */
 @media (max-width: 850px){
 
 header{
@@ -182,4 +179,58 @@ footer p{
     font-size: 2vh;
 }
 
+}
+
+/* parte do cadastro */
+section h1{
+    font-size: 38pt;
+    text-align: center;
+    color: #fff;
+    background: #ff4545;
+    padding: 120px;
+    border-top: 5px solid white;
+}
+
+section p{
+    font-size: 12pt;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+form{
+    display: block;
+    margin: auto;
+    padding: 0px 20px;
+    width: 50%;
+}
+
+form label{
+    display: inline-block;
+    font-size: 18pt;
+    width: calc(50% - 320px);
+}
+
+form input{
+    margin: 15px 0px;
+    height: 35px;
+    width: 50%;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+}
+
+#btn-reset{
+    background-color: rgb(149, 149, 149);
+    color:white;
+    padding: 10px 10px;
+    margin-left: calc(100% - 400px);
+    border: #fff;
+    border-radius: 10px;
+}
+
+#btn-submit{
+    background-color: #ff4545;
+    color:white;
+    padding: 10px 20px;
+    border: #fff;
+    border-radius: 10px;
 }
