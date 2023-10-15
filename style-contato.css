@@ -186,12 +186,17 @@ footer p{
 
 }
 
+/*css do contato*/
+main{
+    min-height: 88vh;
+}
+
 main h1 {
     font-size: 28pt;
     text-align: center;
     color: rgb(255, 255, 255), 255;
     background: #ff4545;
-    padding: 120px;
+    padding: 3em;
     border-top: 5px solid white;
 }
 
