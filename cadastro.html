@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Contato</title>
-    <link rel="stylesheet" href="style-contato.css">
+    <title>Cadastrar usuário</title>
+    <link rel="stylesheet" href="style-cadastro.css">
     <script src="navbar.js"></script>
 </head>
 <body>
@@ -24,39 +24,29 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Catálogo</a></li>
-                <li><a href="vendedores.html">Vendedores</a></li>
+                <li><a href="#">Vendedores</a></li>
                 <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">Contato</a></li>
                 <li><a href="cadastro.html" id="header-btn-cadastro">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
-        <div id="contato-h1">
-            <h1>Qual canal de comunicação você deseja?</h1>
-        </div>
-
-        <section class="contato-info">
-            <div>
-                <img src="./imgs/emailicone.png" alt="Ícone E-mail">
-                <h2>E-mail</h2>
-                <p id="email">automarket@contato.com</p>
-            </div>
-            
-            <div>
-                <img src="./imgs/telefoneicone.png" alt="Ícone Telefone">
-                <h2>Telefone</h2>
-                <p id="telefone">(11) 1234-5678</p>
-            </div>
-            
-            <div>
-                <img src="./imgs/chaticone.png" alt="Ícone Chat">
-                <h2>Chat com Atendente</h2>
-                <button id="iniciarChat">Iniciar Chat</button>
-            </div>
+        <section>
+            <div class="pagina-cadastro">
+                <div class="form">
+                  <form class="formulario-login">
+                    <input type="text" placeholder="Nome de usuário"/>
+                    <input type="email" placeholder="E-mail"/>
+                    <input type="password" placeholder="Senha"/>
+                    <input type="password" placeholder="Confirmar senha"/>
+                    <button>CADASTRAR</button> 
+                    <p class="mensagem">Já tem uma conta? &nbsp;<a href="#">Fazer Login</a></p>
+                  </form>
+                </div>
+              </div>
         </section>
     </main>
-
     <footer>
         <p><b>&copy; 1995 - 2023 AutoMarket S.A. Todos os direitos reservados.</b></p>
     </footer>

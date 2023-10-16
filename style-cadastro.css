@@ -175,66 +175,70 @@ header{
     align-items: center;
 }
 
-.contato-info{
-    flex-direction: column;
-    gap: 5vh;
-}
-
 footer p{
     font-size: 2vh;
 }
 
 }
 
-/*css do contato*/
-main{
-    min-height: 88vh;
+/* parte do cadastro */
+.pagina-cadastro {
+  width: 480px;
+  padding: 6% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ff4545;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.form input {
+    font-family: 'Poppins', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  border-radius: 12px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+    font-family: 'Poppins', sans-serif;
+  outline: 0;
+  background: #ff4545;
+  width: 100%;
+  border: 3;
+  border-radius: 12px;
+  border-color: white;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #ffffff;
+  color: #ff4545;
+}
+.form .mensagem {
+  margin: 15px 0 0;
+  color: #cbcbcb;
+  font-size: 12px;
+}
+.form .mensagem a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-main h1 {
-    font-size: 28pt;
-    text-align: center;
-    color: rgb(255, 255, 255), 255;
-    background: #ff4545;
-    padding: 3em;
-    border-top: 5px solid white;
-}
-
-.contato-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.contato-info div {
-    text-align: center;
-}
-
-.contato-info h2 {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-#iniciarChat {
-    background-color: #ff4545;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-img {
-    width: 100px;
-}
-
-section {
-    margin: 25px;
-    padding: 120px;
-}
-
-h1 {
-    color: white;
+body {
+    font-family: 'Poppins', sans-serif;
+  background: transparent; 
+  background-image: url("imgs/wp2185461-car-interior-wallpapers\ \(1\).jpg");     
 }
