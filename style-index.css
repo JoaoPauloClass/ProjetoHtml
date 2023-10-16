@@ -183,3 +183,39 @@ footer p{
 }
 
 }
+
+main {
+    min-height: 100vh;
+    text-align: justify;
+}
+
+main h1{
+    display: block;
+    font-size: 28pt;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border-bottom: solid 5px #ff4545;
+}
+
+main h2{
+    font-size: 15pt;
+    text-align: center; 
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}
+
+img{
+    max-width: 100vh;
+    max-height: 60vh;
+}
+
+.img-main{
+    margin: auto;
+    padding: 30px;
+    height: auto;
+    width: 100vh;
+    object-fit: cover;
+}
