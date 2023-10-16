@@ -24,51 +24,29 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Catálogo</a></li>
-                <li><a href="vendedores.html">Vendedores</a></li>
+                <li><a href="#">Vendedores</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contato.html">Contato</a></li>
-                <li><a href="cadastro.html" id="header-btn-cadastro">Login</a></li>
+                <li><a href="cadastro.html" id="header-btn-cadastro">Cadastrar</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-            
-            <h1>Cadastro de Usuário</h1>
-            <br> 
-            <p>Você está a poucos passos de fazer parte da AutoMarket!</p>
-            
-<br>
-
-            <form id="cadastro-form">
-    
-                <label for="nome"><b>Nome:</b></label>
-                <input type="text" id="nome"><br>
-    
-                <label for="email"><b>E-mail:</b></label>
-                <input type="email" id="email"><br>
-    
-                <label for="senha"><b>Senha: </b></label>
-                <input type="password" id="nome"><br>
-    
-                <label for="senha-conf"><b>Confirmar Senha:</b></label>
-                <input type="password" id="senha-conf"><br>
-    
-                <label for="estado"><b>Estado / Cidade:</b></label>
-                <input type="text" id="estado"><br>
-
-                <label for="telefone"><b>Telefone Celular:</b></label>
-                <input type="number" id="telefone"><br>
-    
-            </form>
-    
-            <button type="reset" id="btn-reset" form="cadastro-form">Limpar</button>
-    
-            <button type="submit" id="btn-submit" form="cadastro-form">Cadastrar</button>
-    
+            <div class="pagina-cadastro">
+                <div class="form">
+                  <form class="formulario-login">
+                    <input type="text" placeholder="Nome de usuário"/>
+                    <input type="email" placeholder="E-mail"/>
+                    <input type="password" placeholder="Senha"/>
+                    <input type="password" placeholder="Confirmar senha"/>
+                    <button>CADASTRAR</button> 
+                    <p class="mensagem">Já tem uma conta? &nbsp;<a href="#">Fazer Login</a></p>
+                  </form>
+                </div>
+              </div>
         </section>
     </main>
-    <br><br>
     <footer>
         <p><b>&copy; 1995 - 2023 AutoMarket S.A. Todos os direitos reservados.</b></p>
     </footer>
