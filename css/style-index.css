@@ -1,4 +1,8 @@
-/* Vermelho #ff4545 */
+/*
+    Vermelho #ff4545
+*/
+
+/**/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 
 *{
@@ -91,7 +95,7 @@ header{
     border-radius: 10px;
 }
 
-/* animacao do botao cadastro ao colocar o mouse por cima */
+/*animacao do botao cadastro ao colocar o mouse por cima*/
 #header-btn-cadastro:hover{
     cursor: pointer;
     transition: all 200ms;
@@ -114,9 +118,10 @@ footer{
 
 footer p{
     font-size: 2.5vh;
+    color:white;
 }
 
-/* resposividade para telas menores que 1250px */
+/*resposividade para telas menores que 1250px*/
 @media (max-width: 1250px){
 
 .logo img{
@@ -132,8 +137,7 @@ footer p{
 }
 
 }
-
-/* resposividade para mobile, menores que 850px */
+/*resposividade para mobile, menores que 850px*/
 @media (max-width: 850px){
 
 header{
@@ -165,7 +169,7 @@ header{
     position: absolute;
     top: 69px;
     right: 0;
-    width: 75vw;
+    width: 100vw;
     height: 50vh;
     background: #ff4545;
 }
@@ -181,64 +185,71 @@ footer p{
 
 }
 
-/* parte do cadastro */
-.pagina-cadastro {
-  width: 480px;
-  padding: 6% 0 0;
-  margin: auto;
-}
-.form {
-  position: relative;
-  z-index: 1;
-  background: #ff4545;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-.form input {
-    font-family: 'Poppins', sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  border-radius: 12px;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
-}
-.form button {
-    font-family: 'Poppins', sans-serif;
-  outline: 0;
-  background: #ff4545;
-  width: 100%;
-  border: 3;
-  border-radius: 12px;
-  border-color: white;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  cursor: pointer;
-}
-.form button:hover,.form button:active,.form button:focus {
-  background: #ffffff;
-  color: #ff4545;
-}
-.form .mensagem {
-  margin: 15px 0 0;
-  color: #cbcbcb;
-  font-size: 12px;
-}
-.form .mensagem a {
-  color: #ffffff;
-  text-decoration: none;
+main h1{
+    display: block;
+    font-size: 28pt;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    border-bottom: solid 5px #ff4545;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-  background: transparent; 
-  background-image: url("imgs/wp2185461-car-interior-wallpapers\ \(1\).jpg");     
+main h2{
+    font-size: 15pt;
+    text-align: center; 
+    width: 50%;
+    margin: auto;
+    padding: 50px;
+}
+
+img{
+    max-width: 100vh;
+    max-height: 60vh;
+    border-radius: 10px;
+}
+
+.img-main{
+    margin: auto;
+    padding: 30px;
+    height: auto;
+    width: 100vh;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: #9d9d9d;
+}
+
+.price {
+    font-size: 16px;
+    color: #ff4545;
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #ff4545;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+.buy-button:hover{
+    background-color: #ff2f2f;
 }

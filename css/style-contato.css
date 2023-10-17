@@ -1,8 +1,4 @@
-/*
-    Vermelho #ff4545
-*/
-
-/**/
+/* Vermelho #ff4545 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
 
 *{
@@ -95,7 +91,7 @@ header{
     border-radius: 10px;
 }
 
-/*animacao do botao cadastro ao colocar o mouse por cima*/
+/* animacao do botao cadastro ao colocar o mouse por cima */
 #header-btn-cadastro:hover{
     cursor: pointer;
     transition: all 200ms;
@@ -120,7 +116,7 @@ footer p{
     font-size: 2.5vh;
 }
 
-/*resposividade para telas menores que 1250px*/
+/* resposividade para telas menores que 1250px */
 @media (max-width: 1250px){
 
 .logo img{
@@ -136,7 +132,8 @@ footer p{
 }
 
 }
-/*resposividade para mobile, menores que 850px*/
+
+/* resposividade para mobile, menores que 850px */
 @media (max-width: 850px){
 
 header{
@@ -168,7 +165,7 @@ header{
     position: absolute;
     top: 69px;
     right: 0;
-    width: 75vw;
+    width: 100vw;
     height: 50vh;
     background: #ff4545;
 }
@@ -178,44 +175,66 @@ header{
     align-items: center;
 }
 
+.contato-info{
+    flex-direction: column;
+    gap: 5vh;
+}
+
 footer p{
     font-size: 2vh;
 }
 
 }
 
-main {
-    min-height: 100vh;
-    text-align: justify;
+/*css do contato*/
+main{
+    min-height: 88vh;
 }
 
-main h1{
-    display: block;
+main h1 {
     font-size: 28pt;
     text-align: center;
-    width: 50%;
-    margin: auto;
-    padding: 30px;
-    border-bottom: solid 5px #ff4545;
+    color: rgb(255, 255, 255), 255;
+    background: #ff4545;
+    padding: 3em;
+    border-top: 5px solid white;
 }
 
-main h2{
-    font-size: 15pt;
-    text-align: center; 
-    width: 50%;
-    margin: auto;
-    padding: 50px;
+.contato-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
 
-img{
-    max-width: 100vh;
-    max-height: 60vh;
+.contato-info div {
+    text-align: center;
 }
 
-.img-main{
-    margin: auto;
-    padding: 30px;
-    height: auto;
-    width: 100vh;
-    object-fit: cover;
+.contato-info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#iniciarChat {
+    background-color: #ff4545;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+img {
+    width: 100px;
+}
+
+section {
+    margin: 25px;
+    padding: 120px;
+}
+
+h1 {
+    color: white;
 }
