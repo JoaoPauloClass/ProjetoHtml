@@ -16,6 +16,7 @@ body{
     padding: 0;
 }
 
+/* ---------------- menu -------------*/
 header{
     background-color: #ff4545;
     color: white;
@@ -104,6 +105,7 @@ header{
     padding: 15px;
 }
 
+/* ---------------- rodape -------------*/
 footer{
     display: flex;
     align-items: center;
@@ -120,24 +122,8 @@ footer p{
     font-size: 2.5vh;
 }
 
-/*resposividade para telas menores que 1250px*/
-@media (max-width: 1250px){
-
-.logo img{
-    height: 50%;
-}
-
-.logo h1{
-    font-size: 2vh;
-}
-
-footer p{
-    font-size: 2.5vh;
-}
-
-}
-/*resposividade para mobile, menores que 850px*/
-@media (max-width: 850px){
+/* ---------------- responsividade menu e rodape -------------*/
+@media (max-width: 1000px){
 
 header{
     justify-content: space-evenly;
@@ -168,7 +154,7 @@ header{
     position: absolute;
     top: 69px;
     right: 0;
-    width: 75vw;
+    width: 100vw;
     height: 50vh;
     background: #ff4545;
 }
@@ -178,8 +164,12 @@ header{
     align-items: center;
 }
 
+footer p{
+    font-size: 2vh;
+}
 }
 
+/* ---------------- vendedores -------------*/
 table {
     border-collapse: collapse;
     width: 80%;
@@ -211,4 +201,56 @@ section h1{
     color: white;
     padding: 5vh 0;
     font-size: 30pt;
+}
+
+.estoque-redirect{
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.estoque-redirect p{
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+
+.estoque-redirect a{
+    text-decoration: none;
+}
+
+.estoque-redirect button{
+    display: block;
+    border: 0;
+    background-color: #ff4545;
+    border-radius: 10px;
+    width: 20vw;
+    height: 7vh;
+    margin: 3vh auto;
+    transition: all 250ms;
+    color: white;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.estoque-redirect button:hover{
+    cursor: pointer;
+    width: 23vw;
+    height: 8vh;
+    background-color: white;
+    color: #ff4545;
+    border: 5px solid #ff4545;
+}
+
+/* ---------------- responsividade vendedores -------------*/
+@media (max-width: 1000px){
+
+.table-container{
+    overflow-x: auto;
+    padding: 5px;
+}
+
+.estoque-redirect button{
+    width: 50vw;
+    font-size: 12pt;
+}
+
 }

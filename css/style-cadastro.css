@@ -12,6 +12,7 @@ body{
     padding: 0;
 }
 
+/* ---------------- menu -------------*/
 header{
     background-color: #ff4545;
     color: white;
@@ -100,6 +101,7 @@ header{
     padding: 15px;
 }
 
+/* ---------------- rodape -------------*/
 footer{
     display: flex;
     align-items: center;
@@ -116,25 +118,8 @@ footer p{
     font-size: 2.5vh;
 }
 
-/* resposividade para telas menores que 1250px */
-@media (max-width: 1250px){
-
-.logo img{
-    height: 50%;
-}
-
-.logo h1{
-    font-size: 2vh;
-}
-
-footer p{
-    font-size: 2.5vh;
-}
-
-}
-
-/* resposividade para mobile, menores que 850px */
-@media (max-width: 850px){
+/* ---------------- responsividade menu e rodape -------------*/
+@media (max-width: 1000px){
 
 header{
     justify-content: space-evenly;
@@ -165,7 +150,7 @@ header{
     position: absolute;
     top: 69px;
     right: 0;
-    width: 75vw;
+    width: 100vw;
     height: 50vh;
     background: #ff4545;
 }
@@ -178,67 +163,78 @@ header{
 footer p{
     font-size: 2vh;
 }
-
 }
 
-/* parte do cadastro */
+/* ---------------- cadastro -------------*/
 .pagina-cadastro {
-  width: 480px;
-  padding: 6% 0 0;
-  margin: auto;
+    width: 100%;
+    margin: 10vh auto;
+    min-height: 68vh;
 }
+
 .form {
-  position: relative;
-  z-index: 1;
-  background: #ff4545;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+    background: #ff4545;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
-.form input {
+
+form input {
     font-family: 'Poppins', sans-serif;
-  outline: 0;
-  background: #f2f2f2;
-  width: 100%;
-  border: 0;
-  border-radius: 12px;
-  margin: 0 0 15px;
-  padding: 15px;
-  box-sizing: border-box;
-  font-size: 14px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
-.form button {
+form button {
     font-family: 'Poppins', sans-serif;
-  outline: 0;
-  background: #ff4545;
-  width: 100%;
-  border: 3;
-  border-radius: 12px;
-  border-color: white;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  cursor: pointer;
+    outline: 0;
+    background: #ff4545;
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 12px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
 }
-.form button:hover,.form button:active,.form button:focus {
-  background: #ffffff;
-  color: #ff4545;
+form button:hover,.form button:active,.form button:focus {
+    transition: all 250ms;
+    background: #ffffff;
+    color: #ff4545;
 }
-.form .mensagem {
-  margin: 15px 0 0;
-  color: #cbcbcb;
-  font-size: 12px;
+form .mensagem {
+    margin: 15px 0 0;
+    color: #ffffff;
+    font-size: 12px;
 }
-.form .mensagem a {
-  color: #ffffff;
-  text-decoration: none;
+form .mensagem a {
+    color: #cfcfcf;
+    text-decoration: none;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-  background: transparent; 
-  background-image: url("../imgs/wp2185461-car-interior-wallpapers\ \(1\).jpg");     
+    background: transparent; 
+    background-image: url("../imgs/wp2185461-car-interior-wallpapers\ \(1\).jpg");     
+}
+
+/* ---------------- responsividade cadastro -------------*/
+@media (max-width: 1000px){
+
+.pagina-cadastro{
+    min-height: 75vh;
+}
+
+.form{
+    padding: 45px 20px;
+}
+
 }

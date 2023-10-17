@@ -16,6 +16,7 @@ body{
     padding: 0;
 }
 
+/* ---------------- menu -------------*/
 header{
     background-color: #ff4545;
     color: white;
@@ -105,6 +106,74 @@ header{
 }
 
 
+
+/* ---------------- rodape -------------*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-color: #ff4545;
+    color: white;
+}
+
+footer p{
+    font-size: 2.5vh;
+}
+
+
+/* ---------------- responsividade menu e rodape -------------*/
+@media (max-width: 1000px){
+
+header{
+    justify-content: space-evenly;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    height: 50%;
+}
+
+.logo h1{
+    font-size: 2.5vh;
+}
+
+.mobile-menu{
+    display: block;
+}
+
+.nav-header{
+    display: none;
+}
+
+.nav-header.active{
+    display: inline;
+    position: absolute;
+    top: 69px;
+    right: 0;
+    width: 100vw;
+    height: 50vh;
+    background: #ff4545;
+}
+
+.nav-header ul{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer p{
+    font-size: 2vh;
+}
+}
+
+/* ---------------- faq -------------*/
 main{
     min-height: 100vh;
     text-align: justify;
@@ -160,11 +229,18 @@ main button{
     height: 8vh;
     margin: 3vh auto;
     transition: all 250ms;
+    color: white;
+    font-weight: bold;
+    font-size: 16pt;
 }
 
 main button:hover{
+    cursor: pointer;
     width: 26vw;
     height: 9vh;
+    background-color: white;
+    color: #ff4545;
+    border: 5px solid #ff4545;
 }
 
 main a{
@@ -172,83 +248,10 @@ main a{
     height: 100%;
     font-size: 16pt;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    width: 100%;
-    height: 50px;
-    background-color: #ff4545;
-    color: white;
-}
-
-footer p{
-    font-size: 2.5vh;
-}
-
-/*resposividade para telas menores que 1250px*/
-@media (max-width: 1250px){
-
-.logo img{
-    height: 50%;
-}
-
-.logo h1{
-    font-size: 2vh;
-}
-
-footer p{
-    font-size: 2.5vh;
-}
-
-}
-/*resposividade para mobile, menores que 850px*/
-@media (max-width: 850px){
-
-header{
-    justify-content: space-evenly;
-}
-
-.logo{
-    width: 50%;
-}
-
-.logo img{
-    height: 50%;
-}
-
-.logo h1{
-    font-size: 2.5vh;
-}
-
-.mobile-menu{
-    display: block;
-}
-
-.nav-header{
-    display: none;
-}
-
-.nav-header.active{
-    display: inline;
-    position: absolute;
-    top: 69px;
-    right: 0;
-    width: 100vw;
-    height: 50vh;
-    background: #ff4545;
-}
-
-.nav-header ul{
-    flex-direction: column;
-    align-items: center;
-}
+/* ---------------- responsividade faq -------------*/
+@media (max-width: 1000px){
 
 main{
     text-align:start;
@@ -268,9 +271,5 @@ main h2{
 
 main button{
     width: 50vw;
-}
-
-footer p{
-    font-size: 2vh;
 }
 }

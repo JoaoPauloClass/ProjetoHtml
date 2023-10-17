@@ -12,6 +12,7 @@ body{
     padding: 0;
 }
 
+/* ---------------- menu -------------*/
 header{
     background-color: #ff4545;
     color: white;
@@ -100,6 +101,7 @@ header{
     padding: 15px;
 }
 
+/* ---------------- rodape -------------*/
 footer{
     display: flex;
     align-items: center;
@@ -116,25 +118,8 @@ footer p{
     font-size: 2.5vh;
 }
 
-/* resposividade para telas menores que 1250px */
-@media (max-width: 1250px){
-
-.logo img{
-    height: 50%;
-}
-
-.logo h1{
-    font-size: 2vh;
-}
-
-footer p{
-    font-size: 2.5vh;
-}
-
-}
-
-/* resposividade para mobile, menores que 850px */
-@media (max-width: 850px){
+/* ---------------- responsividade menu e rodape -------------*/
+@media (max-width: 1000px){
 
 header{
     justify-content: space-evenly;
@@ -183,10 +168,9 @@ header{
 footer p{
     font-size: 2vh;
 }
-
 }
 
-/*css do contato*/
+/* ---------------- contato -------------*/
 main{
     min-height: 88vh;
 }
@@ -209,6 +193,7 @@ main h1 {
 
 .contato-info div {
     text-align: center;
+    min-height: 20vh;
 }
 
 .contato-info h2 {
@@ -224,6 +209,16 @@ main h1 {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: 700;
+    transition: all 250ms;
+}
+
+#iniciarChat:hover{
+    cursor: pointer;
+    padding: 12px 22px;
+    background-color: white;
+    color: #ff4545;
+    border: 5px solid #ff4545;
 }
 
 img {
@@ -237,4 +232,17 @@ section {
 
 h1 {
     color: white;
+}
+
+/* ---------------- responsividade contato -------------*/
+@media (max-width: 1000px){
+
+main h1{
+    padding: 1em;
+}
+
+.contato-info{
+    gap: 5vh;
+}
+
 }
